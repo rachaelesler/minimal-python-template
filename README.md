@@ -17,7 +17,7 @@ with your python tool/package name.
   ```bash
   # Update the below lines with your project name
   PROJECT_NAME=my_cool_project
-  PROJECT_NAME_HYPHENATED=my-tool-project
+  PROJECT_NAME_HYPHENATED=my-cool-project
 
   find . -not -path "./.git/*" -type f -exec sed -i 's/minimal_python_template/$PROJECT_NAME/g' {} +
   find . -not -path "./.git/*" -type f -exec sed -i 's/minimal-python-template/$PROJECT_NAME_HYPHENATED/g' {} +
