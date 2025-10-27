@@ -43,7 +43,7 @@ the template
 
 ### Installation requirements
 
-* pip (tested with pip v25.1.1)
+* pip (tested with pip v25.2)
 
 ### Installation instructions
 
