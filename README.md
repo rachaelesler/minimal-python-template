@@ -1,6 +1,6 @@
 # Minimal Python template
 
-Template for a minimal Python 3.11+ tool/package that can be installed and
+Template for a minimal Python 3 tool/package that can be installed and
 packaged with [setuptools](https://setuptools.pypa.io/en/latest/).
 
 ## Template Usage Instructions
