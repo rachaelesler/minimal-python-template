@@ -11,18 +11,6 @@ been followed.
 Follow the following steps:
 
 * Create a new template repository from this repository.
-* Replace "minimal_python_template" and "minimal-python-template" in all files
-with your python tool/package name.
-
-  ```bash
-  # Update the below lines with your project name
-  PROJECT_NAME=my_cool_project
-  PROJECT_NAME_HYPHENATED=my-cool-project
-
-  find . -not -path "./.git/*" -type f -exec sed -i 's/minimal_python_template/$PROJECT_NAME/g' {} +
-  find . -not -path "./.git/*" -type f -exec sed -i 's/minimal-python-template/$PROJECT_NAME_HYPHENATED/g' {} +
-  ```
-
 * Rename the `src/minimal_python_template` directory with your python package
 name
 
@@ -31,6 +19,22 @@ name
   ```
 
   * Place your own package source code in this directory
+* Replace "minimal_python_template" and "minimal-python-template" in all files
+with your python tool/package name.
+
+  ```bash
+  # Update the below lines with your project name
+  PROJECT_NAME=my_cool_project
+  PROJECT_NAME_HYPHENATED=my-cool-project
+
+  find . -not -path "./.git/*" -type f \
+    -exec sed -i 's/minimal_python_template/$PROJECT_NAME/g' {} +
+
+  find . -not -path "./.git/*" -type f \
+    -exec sed -i 's/minimal-python-template/$PROJECT_NAME_HYPHENATED/g' {} +
+  ```
+
+
 
 * Grep project files for "TODO (usr)" and follow instructions for customising
 the template
