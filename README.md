@@ -25,7 +25,7 @@ with your python tool/package name.
   ```bash
   # Update the below lines with your project name
   PROJECT_NAME=my_cool_project
-  PROJECT_NAME_HYPHENATED=my-tool-project
+  PROJECT_NAME_HYPHENATED=my-cool-project
 
   find . -not -path "./.git/*" -type f \
     -exec sed -i 's/minimal_python_template/$PROJECT_NAME/g' {} +
@@ -47,7 +47,7 @@ the template
 
 ### Installation requirements
 
-* pip (tested with pip v25.1.1)
+* pip (tested with pip v25.2)
 
 ### Installation instructions
 
