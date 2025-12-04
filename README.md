@@ -28,13 +28,11 @@ with your python tool/package name.
   PROJECT_NAME_HYPHENATED=my-cool-project
 
   find . -not -path "./.git/*" -type f \
-    -exec sed -i 's/minimal_python_template/$PROJECT_NAME/g' {} +
+    -exec sed -i "s/minimal_python_template/$PROJECT_NAME/g" {} +
 
   find . -not -path "./.git/*" -type f \
-    -exec sed -i 's/minimal-python-template/$PROJECT_NAME_HYPHENATED/g' {} +
+    -exec sed -i "s/minimal-python-template/$PROJECT_NAME_HYPHENATED/g" {} +
   ```
-
-
 
 * Grep project files for "TODO (usr)" and follow instructions for customising
 the template
